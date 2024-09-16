@@ -1,10 +1,10 @@
-package grecio.diogo.security;
+package com.core.grecio.diogo.backend;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class SecurityApplicationTests {
+class BackendApplicationTests {
 
 	@Test
 	void contextLoads() {
