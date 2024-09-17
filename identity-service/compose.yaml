@@ -1,0 +1,20 @@
+services:
+  mysqldb:
+    image: mysql
+    container_name: security_mysqldb
+    volumes:
+      - 25efce9e6e0ab7058c7f3ba39d900dcaa9024d0bf5a4ff1918bd798b80b5c4ae:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: $MYSQLDB_ROOT_PASSWORD
+    ports:
+      - "3306:3306"
+    networks:
+      - backend_network
+
+networks:
+  backend_network:
+    external: true # Usa uma rede Docker já existente (ou crie uma)
+
+volumes:
+  25efce9e6e0ab7058c7f3ba39d900dcaa9024d0bf5a4ff1918bd798b80b5c4ae:
+    external: true
