@@ -1,3 +1,0 @@
-docker volume ls
-docker inspect mysql_
-docker network connect backend_network mysql_
