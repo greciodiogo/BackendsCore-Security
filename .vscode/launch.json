@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "BackendApplication",
+            "request": "launch",
+            "mainClass": "com.core.BackendApplication",
+            "projectName": "api-gateway"
+        },
+        {
+            "type": "java",
+            "name": "BackendApplication",
+            "request": "launch",
+            "mainClass": "com.core.BackendApplication",
+            "projectName": "api-service-registry"
+        },
+        {
+            "type": "java",
+            "name": "BackendApplication",
+            "request": "launch",
+            "mainClass": "com.core.BackendApplication",
+            "projectName": "identity-service"
+        },
+        {
+            "type": "java",
             "name": "Current File",
             "request": "launch",
             "mainClass": "${file}"
